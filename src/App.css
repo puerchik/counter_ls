@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+body {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.border {
+  border: 3px solid #61dafb;
+  border-radius: 15px;
+}
+
+.main-wrapper {
+  height: 350px;
+  width: 500px;
+  padding: 20px;
+}
+
+.display-wrapper {
+  height: 135px;
+  margin-bottom: 20px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-bar {
+  height: 100px;
+  padding: 0 50px;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.display-number {
+  font-size: 90px;
+  font-weight: bold;
+}
+
+.button {
+  all: unset;
+  font-size: 80px;
+  background-color: #61dafb;
+  color: #282c34;
+  font-weight: bold;
+  border-radius: 15px;
+  line-height: 95%;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background-color: #555c5c;
+  cursor: default;
+}
+
+.set-value-text {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.input {
+  all: unset;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 3px solid #61dafb;
+}
+
+.incFalse,
+.incorrect-value {
+  color: #ff0000;
+}
+
+.incorect-value-input {
+  border: 3px solid #ff0000;
+  background-color: rgb(223, 147, 147);
 }
